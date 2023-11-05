@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="my-10">1. Button</div>
+        <div>
+          <button class="q-button q-button-primary">Thêm mới tài liệu</button>
+          <button class="q-button q-button-default">Hủy</button>
+          <button class="q-button q-button-primary">
+            <i class="fa-solid fa-plus icon-add"></i>
+            <span class="q-button-title">Thêm</span>
+          </button>
+        </div>
+        <div class="my-10">2. Input</div>
+        <input type="text" class="q-input" placeholder="Nhập địa chỉ email" />
+        <div class="q-input-search-container my-10">
+          <input
+            type="text"
+            class="q-input q-input-search"
+            placeholder="Nhập từ khóa tìm kiếm"
+          />
+          <i class="icon-search fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="my-10">3. Form</div>
+        <form class="form">
+          <div class="form-heading">Đăng nhập</div>
+          <div class="form-group">
+            <label for="email" class="form-label">Họ và tên</label>
+            <input
+              id="email"
+              type="text"
+              class="q-input"
+              placeholder="Nhập địa chỉ email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Họ và tên</label>
+            <input
+              id="password"
+              type="text"
+              class="q-input"
+              placeholder="Nhập địa chỉ email"
+            />
+          </div>
+          <div class="form-button">
+            <button class="q-button q-button-primary">Đăng nhập</button>
+          </div>
+          <div class="form-forget-password">Quên mật khẩu</div>
+        </form>
+      </div>
+      <div class="container">
+        <!-- Dialog cảnh báo -->
+        <div class="my-10 dialog">
+          <div class="dialog-header">
+            <div class="dialog-header-title">Cảnh báo</div>
+            <div class="dialog-header-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="dialog-body">
+            <div class="dialog-body-icon">
+              <i class="icon-warning fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="dialog-body-content">
+              Mật khẩu không được phép để trống.
+            </div>
+          </div>
+          <div class="dialog-footer">
+            <button class="q-button q-button-default">Đóng</button>
+          </div>
+        </div>
+        <!-- Dialog thành công -->
+        <div class="my-10 dialog">
+          <div class="dialog-header">
+            <div class="dialog-header-title">Thành công</div>
+            <div class="dialog-header-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="dialog-body">
+            <div class="dialog-body-icon">
+              <i class="icon-success fa-solid fa-circle-check"></i>
+            </div>
+            <div class="dialog-body-content">
+              Cập nhật tài khoản thành công.
+            </div>
+          </div>
+          <div class="dialog-footer">
+            <button class="q-button q-button-default">Đóng</button>
+          </div>
+        </div>
+        <!-- Dialog xác nhận -->
+        <div class="my-10 dialog">
+          <div class="dialog-header">
+            <div class="dialog-header-title">Xác nhận</div>
+            <div class="dialog-header-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="dialog-body">
+            <div class="dialog-body-icon">
+              <i class="icon-info fa-solid fa-circle-info"></i>
+            </div>
+            <div class="dialog-body-content">
+              Bạn có chắc chắn muốn chặn tài khoản này không?
+            </div>
+          </div>
+          <div class="dialog-footer">
+            <button class="q-button q-button-default">Đóng</button>
+            <button class="q-button q-button-primary">Xác nhận</button>
+          </div>
+        </div>
+        <!-- Dialog cảnh báo lỗi -->
+        <div class="my-10 dialog">
+          <div class="dialog-header">
+            <div class="dialog-header-title">Cảnh báo</div>
+            <div class="dialog-header-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="dialog-body">
+            <div class="dialog-body-icon">
+              <i class="icon-danger fa-solid fa-circle-exclamation"></i>
+            </div>
+            <div class="dialog-body-content">
+              Đã có lỗi xảy ra, vui lòng liên hệ với quản trị viên để được hỗ
+              trợ.
+            </div>
+          </div>
+          <div class="dialog-footer">
+            <button class="q-button q-button-default">Đóng</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="my-10">
+          <div class="dropdown-input-container my-10">
+            <label for="country" class="form-label">Thành phố</label>
+            <div class="q-input-search-container">
+              <input
+                id="country"
+                type="text"
+                class="q-input q-input-search"
+                placeholder="Chọn tên thành phố"
+              />
+              <i id="icon-down" class="icon-down fa-solid fa-chevron-down"> </i>
+            </div>
+            <ul id="list-country" class="dropdown-list">
+              <li class="dropdown-item active">Thanh hóa</li>
+              <li class="dropdown-item">Nghệ An</li>
+              <li class="dropdown-item">Hà Nội</li>
+              <li class="dropdown-item">Hà Nam</li>
+              <li class="dropdown-item">Ninh Bình</li>
+              <li class="dropdown-item">Hà Tĩnh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="my-10">
+          <label class="form-label">Loading</label>
+          <div class="loading-container">
+            <div class="loader"></div>
+          </div>
+        </div>
+        <!-- Toast message success -->
+        <div class="my-10">
+          <div class="toast toast-success">
+            <div class="toast-left">
+              <div class="toast-icon">
+                <i class="icon-success fa-solid fa-circle-check"></i>
+              </div>
+              <div class="toast-body">
+                <div class="toast-title">Thành công</div>
+                <div class="toast-message">Đăng nhập thành công.</div>
+              </div>
+            </div>
+            <div class="toast-right">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Toast message warning -->
+        <div class="my-10">
+          <div class="toast toast-warning">
+            <div class="toast-left">
+              <div class="toast-icon">
+                <i class="icon-warning fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <div class="toast-body">
+                <div class="toast-title">Cảnh báo</div>
+                <div class="toast-message">Email không được để trống.</div>
+              </div>
+            </div>
+            <div class="toast-right">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Toast message info -->
+        <div class="my-10">
+          <div class="toast toast-info">
+            <div class="toast-left">
+              <div class="toast-icon">
+                <i class="icon-info fa-solid fa-circle-info"></i>
+              </div>
+              <div class="toast-body">
+                <div class="toast-title">Thông báo</div>
+                <div class="toast-message">Bạn vừa có tin nhắn từ Nam.</div>
+              </div>
+            </div>
+            <div class="toast-right">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Toast message thông báo lỗi -->
+        <div class="my-10">
+          <div class="toast toast-error">
+            <div class="toast-left">
+              <div class="toast-icon">
+                <i class="icon-danger fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="toast-body">
+                <div class="toast-title">Cảnh báo</div>
+                <div class="toast-message">Lỗi hệ thống.</div>
+              </div>
+            </div>
+            <div class="toast-right">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

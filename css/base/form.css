@@ -1,0 +1,41 @@
+.form {
+  border: 1px solid #dadada;
+  width: 350px;
+  padding: 20px 24px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-button button {
+  width: 100%;
+}
+
+.form-forget-password {
+  text-align: center;
+  padding: 24px 0;
+  color: #3395ff;
+}
+
+.form-forget-password:hover {
+  color: #0062cc;
+  text-decoration: underline;
+  cursor: pointer;
+}

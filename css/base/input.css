@@ -1,0 +1,38 @@
+.q-input {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #bfcbd0;
+  width: 300px;
+}
+
+.q-input:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.q-input:focus {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-color: #007aff;
+}
+
+.q-input-search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 300px;
+}
+
+.q-input-search {
+  width: 100%;
+}
+
+.icon-search {
+  position: absolute;
+  right: 10px;
+  padding: 10px 0 10px 10px;
+  z-index: 100;
+  background-color: #fff;
+  cursor: pointer;
+}
